@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Container",
+"class": "CircleContainer",
+"language": "GDScript",
+"path": "res://addons/control++/circle_container.gd"
+}, {
+"base": "Container",
+"class": "FixedGrid",
+"language": "GDScript",
+"path": "res://addons/control++/fixed_grid.gd"
+}, {
+"base": "HBoxContainer",
+"class": "HBoxContainerPlus",
+"language": "GDScript",
+"path": "res://addons/control++/h_box_container++.gd"
+}, {
+"base": "VBoxContainer",
+"class": "VBoxContainerPlus",
+"language": "GDScript",
+"path": "res://addons/control++/v_box_container++.gd"
+} ]
+_global_script_class_icons={
+"CircleContainer": "res://addons/control++/CircleContainer.svg",
+"FixedGrid": "res://addons/control++/FixedGrid.svg",
+"HBoxContainerPlus": "",
+"VBoxContainerPlus": ""
+}
+
+[application]
+
+config/name="Control++"
+run/main_scene="res://control++.tscn"
+config/icon="res://icon++.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/control++/plugin.cfg" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
