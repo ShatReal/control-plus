@@ -1,7 +1,5 @@
 tool
 extends Container
-class_name CircleContainer, "res://addons/control++/CircleContainer.svg"
-
 
 export(float) var radius := 40.0 setget _set_radius
 export(float) var start_degrees := 0.0 setget _set_start_degrees
