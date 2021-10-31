@@ -1,7 +1,5 @@
 tool
 extends Container
-class_name FixedGrid, "res://addons/control++/FixedGrid.svg"
-
 
 export(int, 1, 2_147_483_647) var columns := 1 setget _set_columns
 export(int, 1, 2_147_483_647) var rows := 1 setget _set_rows
